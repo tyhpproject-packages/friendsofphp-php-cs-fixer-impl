@@ -1,0 +1,41 @@
+{
+    "name": "tyhpdef/friendsofphp-php-cs-fixer-impl",
+    "description": "Implementation package for tyhpdef/friendsofphp-php-cs-fixer. Require tyhpdef/friendsofphp-php-cs-fixer, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "3.95.25.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/friendsofphp-php-cs-fixer"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "friendsofphp/php-cs-fixer": "3.95.25"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev"
+    }
+}
